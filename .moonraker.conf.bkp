@@ -75,7 +75,6 @@ username = mqtt
 password = 77Didou67Pitou
 mqtt_protocol = v3.1.1
 enable_moonraker_api = False
-instance_name = ender
 status_objects = 
 	webhooks
 	heater_bed

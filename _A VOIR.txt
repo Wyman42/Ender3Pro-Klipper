@@ -63,6 +63,16 @@ purge de base
     G92 E0 ; reset extruder
     G1 Z1.0 F3000 ; move z up little to prevent scratching of surface
 
+[gcode_macro Mettre_filament] l'extrudeur tourne mais la buse est froide.
+gcode:
+  M109 S210 T0; attendre buse à 210°
+  G28
+  G1 Z50 F100 ; monter de 5cm
+  G1 E30 F50; mettre 3 cm
+  M104 S0; buse à 0°
+  M84; moteurs OFF
+  _BEEP_COURT
+
 [gcode_macro LEVELLING]
 # A utiliser manuellement, il y le mesh bed adaptative avec print_start
 #variable_T_BED: 50

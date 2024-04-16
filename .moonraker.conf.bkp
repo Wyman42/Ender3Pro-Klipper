@@ -22,6 +22,7 @@ trusted_clients =
 	192.168.0.0/16
 	FE80::/10
 	::1/128
+	100.86.140.90
 
 [octoprint_compat]
 
@@ -73,7 +74,7 @@ install_script = tools/install.sh
 
 [power sonoff_imprimante]
 type = tasmota
-address = 192.168.1.54
+address = 192.168.1.52
 password = 77Didou67Pitou
 
 [mqtt]
